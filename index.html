@@ -3,22 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Number Guesser || Game</title>
+    <link
+      rel="shortcut icon"
+      href="./number-guessing.jpg"
+      type="image/x-icon"
+    />
     <style>
       .container {
         margin: auto;
         width: 45%;
       }
     </style>
+    <title>Number Guesser || Game</title>
   </head>
   <body>
     <div class="container">
       <h1>Number Guesser</h1>
-      <p>Guess a number between 1 and 10</p>
+      <p>
+        Guess a number between <span class="min-num">1</span> and
+        <span class="max-num">10</span>
+      </p>
       <div>
-        <input type="number" />
-        <button type="submit">SUBMIT</button>
+        <input type="number" placeholder="Enter your guess.." />
+        <button type="submit" id="guess-value">SUBMIT</button>
       </div>
+      <p class="message"></p>
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
