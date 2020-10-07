@@ -17,15 +17,19 @@
     <title>Number Guesser || Game</title>
   </head>
   <body>
-    <div class="container">
+    <div id="game" class="container">
       <h1>Number Guesser</h1>
       <p>
-        Guess a number between <span class="min-num">1</span> and
-        <span class="max-num">10</span>
+        Guess a number between <span class="min-num"></span> and
+        <span class="max-num"></span>
       </p>
       <div>
-        <input type="number" placeholder="Enter your guess.." />
-        <button type="submit" id="guess-value">SUBMIT</button>
+        <input
+          type="number"
+          placeholder="Enter your guess.."
+          id="guess-input"
+        />
+        <input id="guess-btn" value="Submit" type="submit"></input>
       </div>
       <p class="message"></p>
     </div>
